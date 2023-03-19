@@ -10,6 +10,7 @@ import com.codename1.ui.layouts.*;
 import com.codename1.ui.plaf.Border;
 import com.codename1.ui.util.Resources;
 import com.codename1.ui.validation.*;
+import com.codename1.ui.spinner.Picker;
 
 /**
  *
@@ -21,10 +22,12 @@ public class InscritForm  extends Form{
     private TextField usernameField;
     private TextField emailField;
     private TextField passwordField;
-    private TextField dateDeNField;
+    
     private TextArea adresseField;
     private Button annulerButton;
     private Button inscritButton;
+    
+    private Picker dateDeNField;
     
     public InscritForm(Resources theme) {
         super(new BorderLayout());
@@ -48,7 +51,9 @@ public class InscritForm  extends Form{
         emailField = new TextField("", "Email", 20, TextField.ANY);
         passwordField = new TextField("", "mot de passe", 20, TextField.PASSWORD);
         usernameField = new TextField("", "Username", 20, TextField.ANY);
-        dateDeNField = new TextField("", "Année de naissance", 20, TextField.ANY);
+        
+        dateDeNField = new Picker();
+        dateDeNField.setType(Display.PICKER_TYPE_DATE);
         
         adresseField = new TextArea();
         adresseField.setRows(5);
@@ -103,7 +108,7 @@ public class InscritForm  extends Form{
         // Add an action listener to the "Annuler" button
         annulerButton.addActionListener(e -> {
             // TODO: handle cancel logic
-            new LoginForm(theme).show();
+            new LoginForm(theme).showBack();
         });
         
         // Add the "Annuler" button to the button container

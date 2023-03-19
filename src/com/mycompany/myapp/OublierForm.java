@@ -37,7 +37,7 @@ public class OublierForm extends Form{
         //Creation de Form
         Form form = new Form("Réinitialiser le mot de passe", new BorderLayout());
         //Ajouter la bouton retourne
-        form.getToolbar().addCommandToLeftBar("", theme.getImage("icons8-back-arrow-90.png"), (e) ->new LoginForm(theme).show());
+        form.getToolbar().addCommandToLeftBar("", theme.getImage("icons8-back-arrow-90.png"), (e) ->new LoginForm(theme).showBack());
         
         // Load an image from the resources
         Image image = theme.getImage("minecraft.jpg");

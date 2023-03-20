@@ -59,9 +59,12 @@ public class MyApplication {
         Form hi = new Form("Hi World", BoxLayout.y());
         hi.add(new Label("Hi World"));
         hi.show();*/
+        Drawer drawer = new Drawer();
+        drawer.getForm().show();
     }
 
     public void stop() {
+        
         current = getCurrentForm();
         if(current instanceof Dialog) {
             ((Dialog)current).dispose();

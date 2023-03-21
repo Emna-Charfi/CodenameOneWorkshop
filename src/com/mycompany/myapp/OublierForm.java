@@ -20,6 +20,8 @@ import com.codename1.ui.util.Resources;
 import com.codename1.ui.validation.LengthConstraint;
 import com.codename1.ui.validation.RegexConstraint;
 import com.codename1.ui.validation.Validator;
+import com.mycompany.entity.User;
+import com.mycompany.service.AuthService;
 
 /**
  *
@@ -29,6 +31,7 @@ public class OublierForm extends Form{
     //Déclaration des variables
     private TextField usernameField;
     private Button suivantButton;
+    AuthService ls = new AuthService();
 
     public OublierForm(Resources theme) {
         super(new BorderLayout());
@@ -37,7 +40,7 @@ public class OublierForm extends Form{
         //Creation de Form
         Form form = new Form("Réinitialiser le mot de passe", new BorderLayout());
         //Ajouter la bouton retourne
-        form.getToolbar().addCommandToLeftBar("", theme.getImage("icons8-back-arrow-90.png"), (e) ->new LoginForm(theme).showBack());
+        form.getToolbar().addCommandToLeftBar("", theme.getImage("icons8-back-arrow-90.png"), (e) ->new LoginForm(theme).show());
         
         // Load an image from the resources
         Image image = theme.getImage("minecraft.jpg");
@@ -67,7 +70,7 @@ public class OublierForm extends Form{
         //validator 
         Validator validator = new Validator();
         validator.setValidationFailureHighlightMode(Validator.HighlightMode.UIID);
-        validator.addConstraint(usernameField, new LengthConstraint(6));
+        validator.addConstraint(usernameField, new LengthConstraint(3));
         
         
          // Add an action listener to the "Suivant" button
@@ -75,7 +78,9 @@ public class OublierForm extends Form{
             // TODO: handle sign up logic
             if (validator.isValid()) {
                new ParametreForm(theme).show();
-              
+               User user = new User();
+               user.setUsername(usernameField.getText());
+              ls.updatePass(user);
             } else {
                 Dialog.show("Validation Error", "Vérifier le champ Username" , "OK", null);
             }

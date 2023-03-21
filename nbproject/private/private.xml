@@ -4,11 +4,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/macbookpro/NetBeansProjects/LoginCodeName/src/com/mycompany/myapp/InscritForm.java</file>
-            <file>file:/Users/macbookpro/NetBeansProjects/LoginCodeName/src/com/mycompany/myapp/LoginForm.java</file>
-            <file>file:/Users/macbookpro/NetBeansProjects/LoginCodeName/src/com/mycompany/myapp/OublierForm.java</file>
-            <file>file:/Users/macbookpro/NetBeansProjects/LoginCodeName/src/com/mycompany/myapp/MyApplication.java</file>
-            <file>file:/Users/macbookpro/NetBeansProjects/LoginCodeName/src/com/mycompany/myapp/ParametreForm.java</file>
+            <file>file:/C:/Users/malle/Desktop/codename%20one/S6CodenameOne/src/com/mycompany/myapp/LoginForm.java</file>
+            <file>file:/C:/Users/malle/Desktop/codename%20one/S6CodenameOne/src/com/mycompany/service/AuthService.java</file>
+            <file>file:/C:/Users/malle/Desktop/codename%20one/S6CodenameOne/src/com/mycompany/service/IAuthService.java</file>
         </group>
     </open-files>
 </project-private>

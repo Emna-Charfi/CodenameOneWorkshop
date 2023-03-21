@@ -38,7 +38,7 @@ public class ParametreForm extends Form{
           //Creation de Form
         Form form = new Form("Paramètres du profil", new BorderLayout());
         //Ajouter la bouton retourne
-        form.getToolbar().addCommandToLeftBar("", theme.getImage("icons8-back-arrow-90.png"), (e) ->new OublierForm(theme).showBack());
+        form.getToolbar().addCommandToLeftBar("", theme.getImage("icons8-back-arrow-90.png"), (e) ->new OublierForm(theme).show());
         
         // Load an image from the resources
         Image image = theme.getImage("minecraft.jpg");

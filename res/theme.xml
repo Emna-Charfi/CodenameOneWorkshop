@@ -877,17 +877,17 @@
         <val key="bgColor" value="ccff" />
         <val key="fgColor" value="ffffff" />
         <val key="label1.bgColor" value="66ff66" />
-        <val key="label1.bgImage" value="ComboBox.sel#borderTopL_1.png" />
+        <val key="label1.bgImage" value="TitleArea.borderBottom_2.png1" />
         <val key="label1.bgType" value="1" />
         <val key="label1.fgColor" value="ffffff" />
         <font key="label1.font" type="ttf" face="0" style="1" size="0" name="native:MainBold" family="native:MainBold" sizeSettings="1" actualSize="12.0" />
-        <val key="label1.margin" value="3.5,3.5,0.0,0.0" />
-        <val key="label1.padding" value="15.0,15.0,12.0,0.0" />
+        <val key="label1.margin" value="0.0,6.0,0.0,0.0" />
+        <val key="label1.padding" value="13.5,41.0,12.0,0.0" />
         <val key="padding" value="0.0,0.0,2.0,0.0" />
         <border key="press#border" type="empty" />
         <border key="sel#border" type="empty" />
         <val key="text.fgColor" value="ffffff" />
-        <font key="text.font" type="ttf" face="0" style="0" size="0" name="native:MainLight" family="native:MainLight" sizeSettings="1" actualSize="12.0" />
+        <font key="text.font" type="ttf" face="0" style="0" size="8" name="native:MainLight" family="native:MainLight" sizeSettings="0" actualSize="12.0" />
         <val key="text.padding" value="5.0,5.0,0.0,0.0" />
     </theme>
     <image name="TitleArea.borderBottom_2.png" type="multi"  />
